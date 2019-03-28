@@ -15,11 +15,6 @@ buildscript {
     }
 }
 
-lintOptions{
-    abortOnError false
-    lintConfig file("../lint.xml")
-}
-
 allprojects {
     repositories {
         google()
