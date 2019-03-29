@@ -1,4 +1,0 @@
-<lint>
-    <issue id="MissingTranslation" severity="error" />
-    <issue id="ContentDescription" severity="ignore" />
-</lint>
