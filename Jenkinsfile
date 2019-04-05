@@ -7,13 +7,13 @@ pipeline {
                     steps{
                         sh 'chmod +x gradlew'
                         sh './gradlew clean'
-                        sh './gradlew checkStyle'
+                        sh './gradlew assembleDebug'
                     }
                 }
                 stage('Unit Test'){
                     steps{
                         //Execute you unit test
-                        sh './gradlew testStagingDebug'
+                        sh './gradlew lint'
                     }
                 }
             }
