@@ -1,6 +1,6 @@
 pipeline {
     agent any
-    stgaes{
+    stages{
         stage('Lint & Unit Test'){
             parallel{
                 stage('checkStyle'){
