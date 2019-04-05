@@ -5,6 +5,8 @@ pipeline {
             parallel{
                 stage('checkStyle'){
                     steps{
+                        sh 'chmod +x gradlew'
+                        sh './gradlew clean'
                         sh './gradlew checkStyle'
                     }
                 }
