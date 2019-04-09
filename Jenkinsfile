@@ -10,9 +10,14 @@ pipeline {
             sh './gradlew assembleDebug'
           }
         }
-        stage('Unit Test') {
+        stage('Lint Test') {
           steps {
             sh './gradlew lint'
+          }
+        }
+        stage('Unit Test') {
+          steps {
+            sh './gradlew testStagingDebug'
           }
         }
       }
